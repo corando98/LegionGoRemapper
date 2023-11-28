@@ -5,7 +5,8 @@ import {
   ServerAPI,
   Button,
   gamepadSliderClasses,
-  ButtonItem
+  ButtonItem,
+  SidebarNavigation
 } from 'decky-frontend-lib';
 import { VFC } from 'react';
 import { useState } from 'react';
@@ -28,10 +29,6 @@ const ControllerLightingPanel: VFC<{ serverAPI: ServerAPI }> = ({
 }) => {
   const [leftMode] = useRgbMode('LEFT');
   const [rightMode] = useRgbMode('RIGHT');
-  // const [H, set_H] = useState<number>(DEFAULT_STATE.H);
-    // const [S, setS] = useState<number>(defaultS);
-    // const [L, setL] = useState<number>(defaultL);
-    // const [A, setA] = useState<number>(defaultA);
 
 
   const [perGameProfilesEnabled, setPerGameProfilesEnabled] =
